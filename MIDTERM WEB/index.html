@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width= , initial-scale=1.0">
+  <link rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+  integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style1.css">
+  <title>My Website</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <!--Header-->
+        <header>
+          <div class="navbar">
+            <div class="logo"><a href="#">Karylle Macaraig</a></div>
+            <ul class ="links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#dream">Dream</a></li>
+              <li><a href="#memories">Memories</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#dream" class="action_btn">Get Started</a>
+            <div class="toggle_btn">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div> 
+           
+          <div class="dropdownmenu">
+            <li><a href="#home">Home</a></li>
+              <li><a href="#dream">Dream</a></li>
+              <li><a href="#memories">Memories</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#" class="action_btn">Get Started</a></li>
+          </div>
+        </header>
+
+        <script>
+          const toggleBtn = document.querySelector('.toggle_btn')
+          const toggleBtnIcon = document.querySelector('.toggle_btn i')
+          const dropDownMenu = document.querySelector('.dropdownmenu')
+
+          toggleBtn.onclick = function ()
+          {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            :'fa-solid fa-bars'
+          }
+        </script>
+    <!--End Header-->
+
+  <!--Hero Section-->
+  <section id="hero"> 
+    <div class ="hero container" >
+      <div>
+        <h1>Hello, <span></span></h1>
+        <h1>My Name is <span></span></h1>
+        <h1>Karylle <span></span></h1>
+        <a href="#about" class="button-74">Karylla's Portfolio</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section-->
+
+  <!-- Dream Section-->
+  <section id="dream">
+    <div class="dream container" >
+      <div class="dream-top">
+        <h1 class="section-title">Dre<span>a</span>ms</h1>
+        <p>As a web analyst, you would have the opportunity to work with data and analytics to improve website performance, 
+          user experience, and overall business goals. If you're passionate about understanding user behavior, tracking website 
+          performance, and using data to drive decisions, then web analytics could be your dream work. </p>
+      </div>
+      <div class="dream-bottom">
+        <div class="dream-item">
+          <div class="icon"><img src="https://img.icons8.com/clouds/100/null/business.png"/></div>
+        <h2>Web Analyst</h2>
+        <p>I want to be a Web analysts because it play a critical role in helping businesses improve website performance, user experience, 
+          and achieve their goals. As a web analyst, you would have a direct impact on the success of the business and its bottom line.</p>
+      </div>
+
+      <div class="dream-item">
+        <div class="icon"><img src="https://img.icons8.com/clouds/100/null/business.png"/></div>
+      <h2>Web Analyst</h2>
+      <p>I want to be a Web analytics becauseit is a field that allows for flexibility in terms of where and how you work. Many web analysts 
+        have the option to work remotely or on a flexible schedule.</p>
+    </div>
+
+    <div class="dream-item">
+      <div class="icon"><img src="https://img.icons8.com/clouds/100/null/business.png"/></div>
+    <h2>Web Analyst</h2>
+    <p>I want to be a Web analytics because it involves here working with a variety of stakeholders, including marketers, designers, developers, 
+      and executives. If you enjoy collaborating with others and working as part of a team, then web analytics could be a great fit for you.</p>
+  </div>
+
+  <div class="dream-item">
+    <div class="icon"><img src="https://img.icons8.com/clouds/100/null/business.png"/></div>
+  <h2>Web Analyst</h2>
+  <p>I want to be a Web analytics because it  is a high-demand field with a strong job market. This means that web analysts can command competitive
+     salaries and benefit from job security and stability.</p>
+</div>
+    </div>
+  </section>
+  <!-- End Dream Section-->
+
+  <!-- Memories Section-->
+  <section id="memories">
+    <div class="memories container">
+      <div class="memories-header">
+        <h1 class="section-title">Unforgettable <span>Memories</span></h1>
+      </div>
+      <div class="all-memories">
+        
+        <div class="memories-item">
+          <div class="memories-info">
+            <h1>Memories 1</h1>
+            <h2>The Best Memories For Me</h2>
+            <p>March 07, 2023, Recent memories with family on Tagaytay City. 
+              One of the best travel ever since.</p>
+          </div>
+          <div class="memories-img">
+            <img src="img/m2.png" alt="img">
+        </div>
+      </div>
+
+      <div class="memories-item">
+        <div class="memories-info">
+          <h1>Memories 2</h1>
+          <h2>The Best Memories For Me</h2>
+          <p>Picture taking after final exam on 1st semster.
+            Section 2F2, one of the best memories with this section.
+          </p>
+        </div>
+        <div class="memories-img">
+          <img src="img/m1.png" alt="img">
+        </div>
+      </div>
+
+      <div class="memories-item">
+        <div class="memories-info">
+          <h1>Memories 3</h1>
+          <h2>The Best Memories For Me</h2>
+          <p>Short vacation at Quezon City and visit at Tagaytay City.
+            Family is the best gift I've have eversince.
+          </p>
+        </div>
+        <div class="memories-img">
+          <img src="img/m3.png" alt="img">
+        </div>  
+      </div>
+
+      <div class="memories-item">
+        <div class="memories-info">
+        <h1>Memories 4</h1>
+        <h2>The Best Memories For Me</h2>
+        <p>I, Me and myself is one of the best memories I've never forget.
+          Love  yourself like you love your people around you.
+        </p>
+        </div>
+        <div class="memories-img">
+          <img src="img/me.png" alt="img">
+        </div>
+      </div>
+  </section>
+  <!-- End Memories Section-->
+
+  <!-- About Section-->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="img/aboutme.jpg" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>me</span></h1>
+        <h2>Karylle Macaraig</h2>
+        <h6>Bachelor of Science in Information Technology</h6>
+        <p>I am Karylle Macaraig, nineteen years of age from Lumangbayan, Baco Oriental Mindoro. October 18, 2003 is my date birth and I am second born child. 
+          I love to watch movie, writing a poem, and reading a book. I have a goal in life, that goals is to believe that all my dream in life is will be come 
+          true someday. I always doing my best as long as I can and my family is always there to support me. I'm second year BSIT student at MINSU. Always remember 
+          the says “Experience is the name everyone gives to their mistakes.” – Oscar Wilde.</p>
+          <a href="mailto: macaraigkarylle48@gmail.com" class="cta">Email Me</a>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- End About Section-->
+
+  <!-- Contact Section-->
+  <section id="contact">
+    <div class="contact container">
+      <div><h1 class="section-title">Contact <span>info</span></h1></div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/50/null/phone--v2.png"/></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>0963 524 1352</h2>
+            <h2>0948 059 9834</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/50/null/gmail-new.png"/></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>macaraigkarylle48@gmail.com</h2>
+            <h2>karyllemacaraig03@gmail.com</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/50/null/address.png"/>
+          </div>
+          <div class="contact-info">
+            <h1>Address</h1>
+            <h2>Lumangbayan Baco, Oriental Mindoro</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section-->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand"><h1><span>K</span>arylle <span>M</span>acaraig</h1></div>
+      <h2>"IT professionals turn ideas into reality, one line of code at a time."</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="mailto: Karylle Villamayor Macaraig"><img src="https://img.icons8.com/bubbles/50/null/facebook-new.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="mailto: Karylle Villamayor Macaraig"><img src="https://img.icons8.com/bubbles/50/null/facebook-messenger.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="mailto: karyllaaaa_8teens"><img src="https://img.icons8.com/bubbles/50/null/instagram-new--v1.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="mailto: keymacaraig01"><img src="https://img.icons8.com/bubbles/50/null/twitter-circled.png"/></a>
+        </div>
+      </div>
+      <p>Copyright © 2023 Karylla. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+</body>
+</html>
